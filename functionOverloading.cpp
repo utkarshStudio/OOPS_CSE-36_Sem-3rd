@@ -4,7 +4,6 @@ using namespace std;
 void sum();
 int sum(int, int);
 float sum(int, float, int);
-gi 
 int main() {
     int a, b, r1;
     float c, r2;
