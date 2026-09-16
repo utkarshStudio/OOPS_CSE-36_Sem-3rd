@@ -1,35 +1,34 @@
 #include <iostream>
 using namespace std;
-
 class Example {
     int a;
 
 public:
     void geta(int);
-    friend Example Sum(Example,Example);
+    Example Sum(Example,Example);
     void display(Example);
 };
 
 void Example::geta(int x) {
     a = x;
 }
-Example Sum(Example E1,Example E2){
+Example Example:: Sum(Example E1,Example E2){
     Example s;
     s.a  = E1.a+E2.a;
 
-    return s;
+    return (s);
 }
 void Example :: display(Example E){
     cout<<E.a<<endl;
 }
 
 int main() {
-    Example A,B,C;
+    Example A,B,C,R;
     A.geta(10);
     B.geta(20);
-    C = Sum(A,B);
+    R = C.Sum(A,B);
     cout<<"Sum : ";
-    C.display(C);
+    R.display(R);
 
     return 0;
 }

@@ -1,26 +1,17 @@
-#include<iostream>
-using namespace std;
-class Example {
-    private:
-        int a , b;
-    public:
-        int n;
-        void getdata() {
-            cout << "Enter two numbers: ";
-            cin >> a >> b;
-        }
-        void print(){
-            cout<< "The numbers are: " << a << " and " << b << "\n";
-        }
-};
 
-int main(){
-    Example obj;
-    obj.getdata();
-    obj.print();
-    Example E;
-    E.n = 10;// . is called memeber access operator;
-    cout<<E.n<<"\n";
-    
+    return s;
+}
+void Example :: display(Example E){
+    cout<<E.a<<endl;
+}
+
+int main() {
+    Example A,B,C,R;
+    A.geta(10);
+    B.geta(20);
+    R = C.Sum(A,B);
+    cout<<"Sum : ";
+    R.display(R);
+
     return 0;
 }
